@@ -28,25 +28,29 @@
 │
 ├── /server                   # Node.js server-side application
 │   ├── /config               # Configuration files (e.g., database, environment)
-│   │   └── ...
-│   ├── /controllers          # Controllers for handling requests
-│   │   ├── itemController.js
-│   │   ├── userController.js
-│   │   └── cartController.js
-│   ├── /models               # Mongoose models
-│   │   ├── itemModel.js
-│   │   ├── userModel.js
-│   │   └── cartModel.js
-│   ├── /routes               # Express routes
-│   │   ├── itemRoutes.js
-│   │   ├── userRoutes.js
-│   │   └── cartRoutes.js
-│   ├── /services             # Services for business logic
-│   │   ├── itemService.js
-│   │   ├── userService.js
-│   │   └── cartService.js
-│   ├── /middlewares          # Express middlewares (e.g., error handling, validation)
-│   │   └── ...
+│   │   └── db.js
+|   |
+│   ├── /modules              # Modules for different features
+│   │   ├── /User
+│   │   │   ├── user.controller.js
+│   │   │   ├── user.model.js
+│   │   │   ├── user.module.js
+│   │   │   └── user.service.js
+│   │   ├── /Product
+│   │   │   ├── product.controller.js
+│   │   │   ├── product.model.js
+│   │   │   ├── product.module.js
+│   │   │   └── product.service.js
+│   │   ├── /Order
+│   │   │   ├── order.controller.js
+│   │   │   ├── order.model.js
+│   │   │   ├── order.module.js
+│   │   │   └── order.service.js
+│   │   └── /Category
+│   │       ├── category.controller.js
+│   │       ├── category.model.js
+│   │       ├── category.module.js
+│   │       └── category.service.js
 │   ├── /utils                # Utility functions
 │   │   └── ...
 │   ├── app.js                # Express app setup
@@ -61,7 +65,6 @@
 │   └── ...
 ├── .env                      # Environment variables
 └── README.md                 # Project documentation
-
 ```
 
 # Packages to install on the Server side
@@ -94,7 +97,7 @@ npm install express mongoose dotenv cors body-parser morgan bcryptjs jsonwebtoke
 npm install --save-dev nodemon eslint prettier
 ```
 
-# Packages for the Clirnt side
+# Packages to install on the Client side
 
 ## Essential Packages
 
