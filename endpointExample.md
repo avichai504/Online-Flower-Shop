@@ -23,7 +23,11 @@
      ```
    - **Example**:
      ```sh
-     b
+     curl -X POST http://localhost:5000/api/users/register -H "Content-Type: application/json" -d '{
+       "username": "john_doe",
+       "email": "john@example.com",
+       "password": "password123"
+     }'
      ```
 2. **Login User**
 

@@ -6,10 +6,10 @@ const dotenv = require("dotenv");
 // Load environment variables
 dotenv.config();
 
-const userRoutes = require("./modules/User/user.module");
-const productRoutes = require("./modules/Product/product.module");
-const orderRoutes = require("./modules/Order/order.module");
-const categoryRoutes = require("./modules/Category/category.module");
+const userRoutes = require("./modules/User/user.route");
+const productRoutes = require("./modules/Product/product.route");
+const orderRoutes = require("./modules/Order/order.route");
+const categoryRoutes = require("./modules/Category/category.route");
 
 const app = express();
 
